@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import tarfile
-from sys import stdin, stdout, stderr
+from sys import stdin, stdout
 
 tar_in = tarfile.open(fileobj=stdin, mode="r|")
 tar_out = tarfile.open(fileobj=stdout, mode="w|", format=tarfile.PAX_FORMAT)
